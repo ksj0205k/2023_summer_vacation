@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input 
+         type = 'button'
+         id = 'button1'
+         value = "1부터 10까지의 합은?"
+         >
+    </body>
+
+    <script>
+        function msg(){
+            alert(event.clientX);
+        }
+
+        button1.addEventListener('click',msg);
+        button1.addEventListener('click',function() {
+            var result = 0;
+            for(var i = 0 ; i <= 10; i++){
+                result = result + i; 
+            }
+            alert(result);
+        });
+    </script>
+</html>
